@@ -1,253 +1,60 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MTTQ Việt Nam Xã Nật Sơn</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Be Vietnam Pro', sans-serif;
-      background: #eef4fb;
-      color: #1e293b;
-    }
-
-    .header {
-      background: linear-gradient(135deg, #0052d4, #4364f7, #6fb1fc);
-      color: white;
-      padding: 70px 20px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .header::before {
-      content: "";
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      background: rgba(255,255,255,0.1);
-      border-radius: 50%;
-      top: -120px;
-      right: -80px;
-    }
-
-    .header::after {
-      content: "";
-      position: absolute;
-      width: 250px;
-      height: 250px;
-      background: rgba(255,255,255,0.08);
-      border-radius: 50%;
-      bottom: -120px;
-      left: -60px;
-    }
-
-    .header h1 {
-      font-size: 42px;
-      font-weight: 700;
-      margin-bottom: 12px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .header p {
-      font-size: 18px;
-      opacity: 0.95;
-      position: relative;
-      z-index: 2;
-    }
-
-    .container {
-      max-width: 1250px;
-      margin: auto;
-      padding: 50px 20px;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 35px;
-      font-size: 30px;
-      font-weight: 700;
-      color: #0f172a;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 24px;
-      padding: 35px 25px;
-      text-decoration: none;
-      color: #1e293b;
-      text-align: center;
-      transition: all 0.3s ease;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      border: 1px solid rgba(255,255,255,0.5);
-      backdrop-filter: blur(10px);
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 16px 40px rgba(0,0,0,0.14);
-    }
-
-    .icon {
-      width: 90px;
-      height: 90px;
-      margin: auto;
-      margin-bottom: 22px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg,#2563eb,#06b6d4);
-      color: white;
-      font-size: 34px;
-    }
-
-    .card h3 {
-      font-size: 22px;
-      margin-bottom: 12px;
-      font-weight: 700;
-    }
-
-    .card p {
-      color: #64748b;
-      line-height: 1.6;
-      font-size: 15px;
-    }
-
-    .footer {
-      background: #0f172a;
-      color: #cbd5e1;
-      text-align: center;
-      padding: 30px 20px;
-      margin-top: 40px;
-    }
-
-    .footer strong {
-      color: white;
-    }
-
-    @media(max-width:768px){
-      .header h1{
-        font-size: 30px;
-      }
-
-      .header p{
-        font-size: 16px;
-      }
-
-      .card{
-        padding: 28px 20px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ủy ban MTTQ Việt Nam xã Nật Sơn</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f5f5f5}
+header{background:#8b1e1e;color:#fff;padding:15px 30px;display:flex;justify-content:space-between;align-items:center}
+nav a{color:#fff;text-decoration:none;margin:0 12px;font-weight:bold}
+.hero{background:linear-gradient(rgba(120,20,20,.8),rgba(120,20,20,.8)),url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');background-size:cover;color:white;text-align:center;padding:100px 20px}
+.hero h1{font-size:56px;margin:0}
+.hero p{font-size:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:30px}
+.card{background:white;border-radius:12px;padding:25px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.card h3{color:#8b1e1e}
+.news{padding:30px}
+.news-item{background:white;padding:15px;border-radius:10px;margin-bottom:10px}
+footer{background:#333;color:white;text-align:center;padding:20px}
+.btn{display:inline-block;background:#d32f2f;color:white;padding:12px 20px;border-radius:8px;text-decoration:none}
+</style>
 </head>
 <body>
+<header>
+<div><strong>MTTQ VIỆT NAM XÃ NẬT SƠN</strong></div>
+<nav>
+<a href="#">Trang chủ</a>
+<a href="#">Mặt trận số</a>
+<a href="#">Tin tức</a>
+<a href="#">Liên hệ</a>
+</nav>
+</header>
 
-  <section class="header">
-    <h1>MTTQ VIỆT NAM XÃ NẬT SƠN</h1>
-    <p>Cổng thông tin và nền tảng số phục vụ người dân và cán bộ địa phương</p>
-  </section>
+<section class="hero">
+<h1>ỦY BAN MTTQ VIỆT NAM<br>XÃ NẬT SƠN</h1>
+<p>Kết nối Nhân dân - Chuyển đổi số - Xây dựng chính quyền số</p>
+<a class="btn" href="#">Khám phá nền tảng</a>
+</section>
 
-  <div class="container">
+<section class="grid">
+<div class="card"><h3>Dịch vụ công</h3><p>Truy cập dịch vụ công trực tuyến.</p></div>
+<div class="card"><h3>VNeID</h3><p>Hướng dẫn sử dụng tài khoản định danh điện tử.</p></div>
+<div class="card"><h3>Bình dân học vụ số</h3><p>Tài liệu kỹ năng số cho người dân.</p></div>
+<div class="card"><h3>Phản ánh hiện trường</h3><p>Tiếp nhận phản ánh, kiến nghị.</p></div>
+<div class="card"><h3>Kho văn bản</h3><p>Tra cứu văn bản, kế hoạch, hướng dẫn.</p></div>
+<div class="card"><h3>Tin tức Mặt trận</h3><p>Cập nhật hoạt động mới nhất.</p></div>
+</section>
 
-    <div class="section-title">
-      Nền tảng số nổi bật
-    </div>
+<section class="news">
+<h2>Tin tức nổi bật</h2>
+<div class="news-item">Hoạt động MTTQ xã Nật Sơn</div>
+<div class="news-item">Chuyển đổi số cộng đồng</div>
+<div class="news-item">Tuyên truyền dịch vụ công trực tuyến</div>
+</section>
 
-    <div class="grid">
-
-      <a class="card" href="https://dichvucong.gov.vn" target="_blank">
-        <div class="icon">
-          <i class="fa-solid fa-building-columns"></i>
-        </div>
-        <h3>Dịch vụ công</h3>
-        <p>Thực hiện thủ tục hành chính và tra cứu hồ sơ trực tuyến.</p>
-      </a>
-
-      <a class="card" href="https://dhtn.mattran.vn/app-view/">
-        <div class="icon">
-          <i class="fa-solid fa-file-lines"></i>
-        </div>
-        <h3>Văn bản điện tử</h3>
-        <p>Quản lý và điều hành văn bản điện tử của địa phương.</p>
-      </a>
-
-      <a class="card" href="#">
-        <div class="icon">
-          <i class="fa-solid fa-users"></i>
-        </div>
-        <h3>Tổ công nghệ số</h3>
-        <p>Hỗ trợ người dân tiếp cận nền tảng số và dịch vụ số.</p>
-      </a>
-
-      <a class="card" href="#">
-        <div class="icon">
-          <i class="fa-solid fa-school"></i>
-        </div>
-        <h3>Giáo dục số</h3>
-        <p>Kết nối các nền tảng phục vụ học tập và giáo dục trực tuyến.</p>
-      </a>
-
-      <a class="card" href="#">
-        <div class="icon">
-          <i class="fa-brands fa-zalo"></i>
-        </div>
-        <h3>Zalo Official</h3>
-        <p>Kênh truyền thông và tương tác chính thức của địa phương.</p>
-      </a>
-
-      <a class="card" href="https://hotronguoidan.mattranso.vn/">
-        <div class="icon">
-          <i class="fa-solid fa-book-open-reader"></i>
-        </div>
-        <h3>Thư viện số</h3>
-        <p>Thư viện số cộng đồng - hỗ trợ người dân tra cứu thông tin.</p>
-      </a>
-
-      <a class="card" href="#">
-        <div class="icon">
-          <i class="fa-solid fa-earth-asia"></i>
-        </div>
-        <h3>Chuyển đổi số</h3>
-        <p>Thông tin và hoạt động chuyển đổi số tại địa phương.</p>
-      </a>
-
-      <a class="card" href="#">
-        <div class="icon">
-          <i class="fa-solid fa-comments"></i>
-        </div>
-        <h3>Phản ánh kiên nghị</h3>
-        <p>Tiếp nhận phản ánh, kiến nghị của người dân trực tuyến.</p>
-      </a>
-
-    </div>
-  </div>
-
-  <div class="footer">
-    <strong>MTTQ Việt Nam Xã Nhật Sơn</strong><br>
-    Hệ thống nền tảng số phục vụ người dân và cán bộ địa phương
-  </div>
-
+<footer>
+© 2026 Ủy ban MTTQ Việt Nam xã Nật Sơn
+</footer>
 </body>
 </html>
-```
